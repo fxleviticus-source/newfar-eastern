@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Menu — New Far Eastern</title>
+<meta name="description" content="The full New Far Eastern menu — breakfast, starters, Chinese specials, seafood, noodles, rice, grills, platters and a full bar.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-icon.png" alt="New Far Eastern icon">
+      <div class="brand-text">
+        <span class="brand-name">New Far Eastern</span>
+        <span class="brand-tag">ASIAN AUTHENTIC TASTE</span>
+      </div>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="mobile-search-link" data-open-search>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search the menu
+      </a>
+      <a href="reservations.html" class="nav-cta">Book a Table</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-desktop" data-open-search aria-label="Search the menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="script">Our Menu</span>
+    <p>Something delicious for everyone.</p>
+  </div>
+</section>
+
+<div class="menu-toolbar">
+  <div class="wrap toolbar-row">
+    <button class="toolbar-search-btn" data-open-search>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <span class="label">Search</span>
+    </button>
+    <nav class="category-nav" id="category-nav" aria-label="Menu categories"></nav>
+  </div>
+</div>
+
+<div class="wrap menu-content" id="menu-content"></div>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Planning a group visit?</h2>
+    <a href="reservations.html" class="btn btn-orange">Reserve a Table</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/img/logo-icon.png" alt=""><span>New Far Eastern</span></div>
+        <p style="max-width:34ch;">Asian Authentic Taste — dumplings, noodles, seafood, Chinese specials and grills, served fresh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+260973960389">+260 97 396 0389</a>
+        <p>New Far Eastern Restaurant</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 New Far Eastern Restaurant.</span>
+      <a href="reservations.html">Book a Table</a>
+    </div>
+  </div>
+</footer>
+
+<div class="search-modal" id="search-modal">
+  <div class="search-modal-panel">
+    <div class="search-modal-head">
+      <input type="text" id="global-search-input" placeholder="Search our menu..." autocomplete="off">
+      <button class="search-modal-close" id="search-modal-close" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="search-hint" id="global-search-hint">Try "chicken", "beef", "noodles", "rice", or "seafood".</div>
+    <div class="search-results" id="global-search-results"></div>
+  </div>
+</div>
+
+<script src="menu-data.js"></script>
+<script src="menu-app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
