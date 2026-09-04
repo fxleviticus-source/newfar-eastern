@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservations — New Far Eastern</title>
+<meta name="description" content="Request a table at New Far Eastern — name, phone, date, time and party size.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-icon.png" alt="New Far Eastern icon">
+      <div class="brand-text">
+        <span class="brand-name">New Far Eastern</span>
+        <span class="brand-tag">ASIAN AUTHENTIC TASTE</span>
+      </div>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html" class="active">Reservations</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="mobile-search-link" data-open-search>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search the menu
+      </a>
+      <a href="reservations.html" class="nav-cta">Book a Table</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-desktop" data-open-search aria-label="Search the menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="script">Reserve Your Table</span>
+    <p>Tell us when you're coming and how many are joining you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reservation-wrap">
+    <div class="reservation-photo reveal">
+      <img src="https://images.unsplash.com/photo-1753727471014-efe38840c7c7?w=900&q=80&auto=format&fit=crop" alt="Restaurant interior" loading="lazy">
+    </div>
+
+    <div style="width:100%;">
+      <div class="form-card reveal" id="reservation-form-card">
+        <h2 style="font-size:1.4rem;margin-bottom:1.4rem;">Request a Reservation</h2>
+        <form id="reservation-form">
+          <div class="form-grid-2">
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-row">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-row">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="guests">Number of guests</label>
+            <select id="guests" name="guests">
+              <option>1 – 2 guests</option>
+              <option>3 – 4 guests</option>
+              <option>5 – 8 guests</option>
+              <option>9+ guests (group booking)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="request">Special request</label>
+            <textarea id="request" name="request" placeholder="Dietary needs, seating preference, occasion..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange" style="width:100%;">Request a Reservation</button>
+        </form>
+      </div>
+
+      <div class="form-card confirm-state" id="reservation-confirm">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Reservation request received</h3>
+        <p>Thank you — your table request has been noted. For same-day or urgent bookings, calling the restaurant directly is fastest.</p>
+        <div style="display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap;">
+          <a href="tel:+260973960389" class="btn btn-orange">Call to Confirm</a>
+          <button class="btn btn-line" id="reservation-again">Make Another Request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/img/logo-icon.png" alt=""><span>New Far Eastern</span></div>
+        <p style="max-width:34ch;">Asian Authentic Taste — dumplings, noodles, seafood, Chinese specials and grills, served fresh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+260973960389">+260 97 396 0389</a>
+        <p>New Far Eastern Restaurant</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 New Far Eastern Restaurant.</span>
+      <a href="reservations.html">Book a Table</a>
+    </div>
+  </div>
+</footer>
+
+<div class="search-modal" id="search-modal">
+  <div class="search-modal-panel">
+    <div class="search-modal-head">
+      <input type="text" id="global-search-input" placeholder="Search our menu..." autocomplete="off">
+      <button class="search-modal-close" id="search-modal-close" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="search-hint" id="global-search-hint">Try "chicken", "beef", "noodles", "rice", or "seafood".</div>
+    <div class="search-results" id="global-search-results"></div>
+  </div>
+</div>
+
+<script src="menu-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
